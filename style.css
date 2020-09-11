@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
+    background-color: #3a3a3a;
+}
+.scrollable-element {
+   
+}
+.btext{
+    color: #f9f3f4;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    border: #fff 2px solid;
+    padding: 10px 15px;
+    border-radius: 8px;
+    line-height: 4em;
+    transition: 1s;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    color: #bdbdbd;
+    border: #bdbdbd 2px solid;
+}
+
+#particles-js {
+    background: linear-gradient(-45deg, #6451a4, #2c8ec4, #31cdb0);
+    background-size: 400% 400%;
+    height: 99.57vh;
+    animation: gradientBG 20s ease infinite;
+    overflow: hidden;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
