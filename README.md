@@ -1,4 +1,4 @@
-# jacobb.net (web)
+# jacobb.net 🌐
 My current kinda portofilo website 😅.
 
 ## Used Libraries & Api's
