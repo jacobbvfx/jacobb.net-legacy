@@ -1,12 +1,61 @@
 body {
     margin: 0;
     font-family: 'DM Mono', monospace;
-    font-size: 16px;
-    background-color: #3a3a3a;
+    font-size: 15px;
+    color: whitesmoke;
+    background: linear-gradient(-45deg, #6451a4, #2c8ec4, #31cdb0);
+    background-size: 300% 300%;
+    animation: gradientBG 20s ease infinite;
+}
+
+nav {
+    z-index: 99 !important;
+    height: 6vh;
+    background:#12121241;
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+    position:sticky;
+    position:-webkit-sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    height: 6vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.7s;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+    transform: scale(1.0);
+}
+
+nav a:hover {
+    color: #ffffff80;
+    transform: scale(1.15);
+    transition: transform 0.55s ease;
+}
+
+.NavBar {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .btext {
-    color: #f9f3f4;
+    color: whitesmoke;
     position: absolute;
     text-align: center;
     top: 40%;
@@ -15,7 +64,7 @@ body {
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
     animation-name: animatebottom;
-    animation-duration: 2s
+    animation-duration: 2s;
 }
 
 @-webkit-keyframes animatebottom {
@@ -43,29 +92,34 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .btn {
-    color: #fff;
     text-decoration: none;
-    border: #fff 2px solid;
     padding: 10px 15px;
-    border-radius: 8px;
     line-height: 4em;
     transition: 1s;
     white-space: nowrap;
 }
 
-.btn:hover{
-    color: #bdbdbd;
-    border: #bdbdbd 2px solid;
+
+a img {
+    transform: scale(1.0);
+    filter:opacity(1);
+    transition: transform 0.55s ease;
+}
+
+a img:hover {
+    transform: scale(1.25);
+    filter:opacity(0.5);
+    transition: transform 0.55s ease;
 }
 
 #particles-js {
     background: linear-gradient(-45deg, #6451a4, #2c8ec4, #31cdb0);
-    background-size: 400% 400%;
-    height: 100vh;
+    background-size: 300% 300%;
+    height: 94vh;
     animation: gradientBG 20s ease infinite;
     overflow: hidden;
 }
@@ -79,4 +133,206 @@ h1 {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+a {
+    text-decoration: none;
+    color: #3ebcff;
+    transition: 0.7s;
+    display: inline;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
+
+.titleSubHeading4 {
+    size: 17px;
+    font-weight: lighter;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3ebcff80;
+    transition: 0.7s;
+}
+
+#dev {
+    background-color: #121212;
+    height: 95vh;
+}
+
+#graph {
+    background-color: #121212;
+    height: 95vh;
+}
+
+#video {
+    background-color: #121212;
+    height: 90vh;
+}
+
+.section {
+    height: auto;
+    background-color: #121212;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: none;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.title {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 5vh;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
+
+.titleHeading {
+    font-size: 40px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
+
+img {
+    transform: scale(1);
+    transition: 2s;
+}
+
+.contianerFlex {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+    border-spacing: 150px;
+}
+
+.itemFlex {
+    margin: 50px 50px 50px 50px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+}
+
+.titleHeadingSmall {
+    font-size: 20px;
+    margin-top: -10px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
+
+.titleSubHeading1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+    font-weight: normal;
+    font-size: 18px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+    text-align: left;
+}
+
+.section2 {
+    height: 15vh;
+    background-color: #121212;
+    background:#12121241;
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+}
+
+.titleSubHeading2 {
+    font-weight: lighter;
+    font-size: 16px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s
+}
+
+@media screen and (max-width:1650px) {
+    #dev {
+        height: 80vh;
+    }
+    
+    #graph {
+        height: 85vh;
+    }
+    
+    #video {
+        height: 80vh;
+    }
+    body {
+        font-size: 16px;
+    }
+    a img {
+        display: unset;
+    }
+    img {
+        display: none;
+    }
+    iframe {
+        display: none
+    }
+    .titleHeading {
+        font-size: 20px;
+    }
+    .titleSubHeading1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -20px;
+        font-weight: normal;
+        font-size: 15px;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 2s;
+        animation-name: animatebottom;
+        animation-duration: 2s;
+        text-align: left;
+    }
+    .itemFlex {
+        margin: 10px 10px 10px 10px;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 2s;
+        animation-name: animatebottom;
+        animation-duration: 2s;
+    }
+    .contianerFlex {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex-wrap: nowrap;
+        flex-shrink: 2;
+        justify-content: center;
+        list-style: none;
+        max-width: 70%;
+    }
+    .section2 {
+        height: 15vh;
+    }
+    .containerSenpai {
+        max-width: 98rem;
+        margin: 0 auto;
+        padding: 0 2.2rem;
+        padding-right: unset;
+        transition: 2s;
+    }
+    
 }
