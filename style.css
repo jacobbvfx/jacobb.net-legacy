@@ -8,6 +8,10 @@ body {
     animation: gradientBG 20s ease infinite;
 }
 
+#home {
+    transition: 2s;
+}
+
 nav {
     z-index: 99 !important;
     height: 6vh;
@@ -122,6 +126,7 @@ a img:hover {
     height: 94vh;
     animation: gradientBG 20s ease infinite;
     overflow: hidden;
+    transition: 2s;
 }
 @keyframes gradientBG {
 	0% {
@@ -143,7 +148,7 @@ a {
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
     animation-name: animatebottom;
-    animation-duration: 2s
+    animation-duration: 2s;
 }
 
 .titleSubHeading4 {
@@ -160,16 +165,19 @@ a:hover {
 #dev {
     background-color: #121212;
     height: 95vh;
+    transition: 2s;
 }
 
 #graph {
     background-color: #121212;
     height: 95vh;
+    transition: 2s;
 }
 
 #video {
     background-color: #121212;
     height: 90vh;
+    transition: 2s;
 }
 
 .section {
@@ -180,6 +188,7 @@ a:hover {
     border-top: none;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    transition: 2s;
 }
 
 .title {
@@ -189,7 +198,8 @@ a:hover {
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
     animation-name: animatebottom;
-    animation-duration: 2s
+    animation-duration: 2s;
+    transition: 2s;
 }
 
 .titleHeading {
@@ -197,7 +207,8 @@ a:hover {
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
     animation-name: animatebottom;
-    animation-duration: 2s
+    animation-duration: 2s;
+    transition: 2s;
 }
 
 img {
@@ -219,6 +230,7 @@ img {
     margin-left: auto;
     max-width: 70%;
     border-spacing: 150px;
+    transition: 2s;
 }
 
 .itemFlex {
@@ -227,6 +239,7 @@ img {
     -webkit-animation-duration: 2s;
     animation-name: animatebottom;
     animation-duration: 2s;
+    transition: 2s;
 }
 
 .titleHeadingSmall {
@@ -235,7 +248,8 @@ img {
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
     animation-name: animatebottom;
-    animation-duration: 2s
+    animation-duration: 2s;
+    transition: 2s;
 }
 
 .titleSubHeading1 {
@@ -249,6 +263,7 @@ img {
     animation-name: animatebottom;
     animation-duration: 2s;
     text-align: left;
+    transition: 2s;
 }
 
 .section2 {
@@ -257,6 +272,7 @@ img {
     background:#12121241;
     -webkit-backdrop-filter: saturate(180%) blur(8px);
     backdrop-filter: saturate(180%) blur(8px);
+    transition: 2s;
 }
 
 .titleSubHeading2 {
@@ -271,17 +287,21 @@ img {
 @media screen and (max-width:1650px) {
     #dev {
         height: 80vh;
+        transition: 2s;
     }
     
     #graph {
         height: 85vh;
+        transition: 2s;
     }
     
     #video {
         height: 80vh;
+        transition: 2s;
     }
     body {
         font-size: 16px;
+        transition: 2s;
     }
     a img {
         display: unset;
@@ -290,10 +310,11 @@ img {
         display: none;
     }
     iframe {
-        display: none
+        display: none;
     }
     .titleHeading {
         font-size: 20px;
+        transition: 2s;
     }
     .titleSubHeading1 {
         margin-left: 10px;
@@ -306,6 +327,7 @@ img {
         animation-name: animatebottom;
         animation-duration: 2s;
         text-align: left;
+        transition: 2s;
     }
     .itemFlex {
         margin: 10px 10px 10px 10px;
@@ -313,6 +335,7 @@ img {
         -webkit-animation-duration: 2s;
         animation-name: animatebottom;
         animation-duration: 2s;
+        transition: 2s;
     }
     .contianerFlex {
         display: flex;
@@ -323,9 +346,11 @@ img {
         justify-content: center;
         list-style: none;
         max-width: 70%;
+        transition: 2s;
     }
     .section2 {
         height: 15vh;
+        transition: 2s;
     }
     .containerSenpai {
         max-width: 98rem;
@@ -335,4 +360,75 @@ img {
         transition: 2s;
     }
     
+}
+
+@media screen and (max-width:500px) {
+    #dev {
+        height: 95vh;
+        transition: 2s;
+    }
+    
+    #graph {
+        height: 100vh;
+        transition: 2s;
+    }
+    
+    #video {
+        height: 100vh;
+        transition: 2s;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #dev {
+        height: 115vh;
+        transition: 2s;
+    }
+    
+    #graph {
+        height: 135vh;
+        transition: 2s;
+    }
+    
+    #video {
+        height: 130vh;
+        transition: 2s;
+    }
+}
+
+@media screen and (max-height:730px) {
+    nav {
+        height: 10vh;
+        transition: 2s;
+    }
+    
+    #particles-js {
+        height: 110vh;
+        transition: 2s;
+    }
+
+    #home {
+        height: 110vh;
+        transition: 2s;
+    }
+    
+    #dev {
+        height: 150vh;
+        transition: 2s;
+    }
+    
+    #graph {
+        height: 155vh;
+        transition: 2s;
+    }
+    
+    #video {
+        height: 150vh;
+        transition: 2s;
+    }
+
+    .section2 {
+        height: 25vh;
+        transition: 2s;
+    }
 }
