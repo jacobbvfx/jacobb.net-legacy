@@ -1,5 +1,5 @@
 # jacobb.net 🌐
-My current kinda portofilo website 😅.
+My current kinda portfolio website 😅.
 
 ## Used Libraries & Api's
 
